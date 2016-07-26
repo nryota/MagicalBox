@@ -1,0 +1,823 @@
+<div class="grid">
+	<!-- start of side-toolbox -->
+	<div class="col_3" id="toolbox">
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">いろ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="color-block">
+					<div class="block-body">
+						ぜんたいのいろ background(<span class="exp-body item1">255, 255, 0, 255</span>);
+					</div>
+					<div class="code-body">
+						p.background(<span class="exp-body item1">255, 255, 0, 255</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						ぬりつぶすいろ fill(<span class="exp-body item1">0, 255, 0, 255</span>);
+					</div>
+					<div class="code-body">
+						p.fill(<span class="exp-body item1">0, 255, 0, 255</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						いろんないろでぬりつぶす fill(random(255), random(255), random(255));
+					</div>
+					<div class="code-body">
+						p.fill(p.random(255), p.random(255), p.random(255));
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						ぬりつぶさない noFill();
+					</div>
+					<div class="code-body">
+						p.noFill();
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						せんのいろ stroke(<span class="exp-body item1">0, 0, 255, 255</span>);
+					</div>
+					<div class="code-body">
+						p.stroke(<span class="exp-body item1">0, 0, 255, 255</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						せんのふとさ strokeWeight(<span class="exp-body item1">5</span>);
+					</div>
+					<div class="code-body">
+						p.strokeWeight(<span class="exp-body item1">5</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						せんをかかない noStroke();
+					</div>
+					<div class="code-body">
+						p.noStroke();
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						ぬりかた blendMode(<span class="exp-body item1">p.BLEND</span>);
+					</div>
+					<div class="code-body">
+						p.blendMode(<span class="exp-body item1">p.BLEND</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						ふつうのぬりかた blendMode(p.BLEND);
+					</div>
+					<div class="code-body">
+						p.blendMode(p.BLEND);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						かがやくぬりかた blendMode(p.ADD);
+					</div>
+					<div class="code-body">
+						p.blendMode(p.ADD);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">かたち </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="shape-block">
+					<div class="block-body">
+						まる ellipse(<span class="exp-body item1">0, 0, 100, 100</span>);
+					</div>
+					<div class="code-body">
+						p.ellipse(<span class="exp-body item1">0, 0, 100, 100</span>);
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						しかく rect(<span class="exp-body item1">-50, -50, 100, 100</span>);
+					</div>
+					<div class="code-body">
+						p.rect(<span class="exp-body item1">-50, -50, 100, 100</span>);
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						さんかく triangle(<span class="exp-body item1">-50, 50, 0, -50, 50, 50</span>);
+					</div>
+					<div class="code-body">
+						p.triangle(<span class="exp-body item1">-50, 50, 0, -50, 50, 50</span>);
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						せん line(<span class="exp-body item1">0, 0, 100, 100</span>);
+					</div>
+					<div class="code-body">
+						p.line(<span class="exp-body item1">0, 0, 100, 100</span>);
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						てん point(<span class="exp-body item1">0, 0</span>);
+					</div>
+					<div class="code-body">
+						p.point(<span class="exp-body item1">0, 0</span>);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">がぞう </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="var-block">
+					<div class="block-body">
+						var <span class="exp-body item1">apple</span>に がぞうをようい loadImage("<span class="exp-body item2">data/apple.png</span>");
+					</div>
+					<div class="code-body">
+						var <span class="exp-body item1">apple</span> = p.loadImage("<span class="exp-body item2">data/apple.png</span>");
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						がぞうをかく image(<span class="exp-body item1">apple</span>, <span class="exp-body item2">0, 0</span>);
+					</div>
+					<div class="code-body">
+						p.image(<span class="exp-body item1">apple</span>, <span class="exp-body item2">0, 0</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						がぞうを ひだりうえ きじゅんに imageMode(p.CORNER);
+					</div>
+					<div class="code-body">
+						p.imageMode(p.CORNER);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						がぞうを まんなか きじゅんに imageMode(p.CENTER);
+					</div>
+					<div class="code-body">
+						p.imageMode(p.CENTER);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">もじ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="shape-block">
+					<div class="block-body">
+						もじをかく text("<span class="exp-body item1">★ ^_^ /</span>", <span class="exp-body item2">0, 0</span>);
+					</div>
+					<div class="code-body">
+						p.text("<span class="exp-body item1">★ ^_^ /</span>", <span class="exp-body item2">0, 0</span>);
+					</div>
+				</li>
+				<li class="shape-block">
+					<div class="block-body">
+						ことばのはこをかく text(<span class="exp-body item1">str</span>, <span class="exp-body item2">0, 0</span>);
+					</div>
+					<div class="code-body">
+						p.text(<span class="exp-body item1">str</span>, <span class="exp-body item2">0, 0</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						もじのおおきさ textSize(<span class="exp-body item1">50</span>);
+					</div>
+					<div class="code-body">
+						p.textSize(<span class="exp-body item1">50</span>);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						もじをひだりうえづめ textAlign(p.LEFT, p.TOP);
+					</div>
+					<div class="code-body">
+						p.textAlign(p.LEFT, p.TOP);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						もじをまんなかにそろえる textAlign(p.CENTER, p.CENTER);
+					</div>
+					<div class="code-body">
+						p.textAlign(p.CENTER, p.CENTER);
+					</div>
+				</li>
+				<li class="color-block">
+					<div class="block-body">
+						もじをみぎしたづめ textAlign(p.RIGHT, p.BOTTOM);
+					</div>
+					<div class="code-body">
+						p.textAlign(p.RIGHT, p.BOTTOM);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">うごき </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="if-block">
+					<div class="block-body">
+						いまのいちをおぼえておく push();
+					</div>
+					<div class="code-body">
+						p.push();
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						まえのいちにもどす pop();
+					</div>
+					<div class="code-body">
+						p.pop();
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						いどうする translate(<span class="exp-body item1">10, 10</span>);
+					</div>
+					<div class="code-body">
+						p.translate(<span class="exp-body item1">10, 10</span>);
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						マウスのいち translate(p.mouseX, p.mouseY);
+					</div>
+					<div class="code-body">
+						p.translate(p.mouseX, p.mouseY);
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						がめんのまんなか translate(p.width / 2, p.height / 2);
+					</div>
+					<div class="code-body">
+						p.translate(p.width / 2, p.height / 2);
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						てきとうなところ translate(p.random(<span class="exp-body item1">p.width</span>), p.random(<span class="exp-body item2">p.height</span>));
+					</div>
+					<div class="code-body">
+						p.translate(p.random(<span class="exp-body item1">p.width</span>), p.random(<span class="exp-body item2">p.height</span>));
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						よこにいったりきたり translate(p.cos( p.frameCount * <span class="exp-body item1">0.05</span> ) * <span class="exp-body item2">100</span>, 0 );
+					</div>
+					<div class="code-body">
+						p.translate(p.cos(p.frameCount*<span class="exp-body item1">0.05</span>) * <span class="exp-body item2">100</span>, 0);
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						たてにいったりきたり translate(0, p.sin( p.frameCount * <span class="exp-body item1">0.05</span> ) * <span class="exp-body item2">100</span> );
+					</div>
+					<div class="code-body">
+						p.translate(0, p.sin(p.frameCount*<span class="exp-body item1">0.05</span>) * <span class="exp-body item2">100</span>);
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						むきをかえる rotate(<span class="exp-body item1">10</span>);
+					</div>
+					<div class="code-body">
+						p.rotate( p.radians(<span class="exp-body item1">10</span>) );
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						ぐるぐるまわる rotate(millis() * <span class="exp-body item1">0.1</span>);
+					</div>
+					<div class="code-body">
+						p.rotate( p.radians(p.millis() * <span class="exp-body item1">0.1</span>) );
+					</div>
+				</li>
+				<li class="move-block">
+					<div class="block-body">
+						おおきさをかえる scale(<span class="exp-body item1">0.5</span>);
+					</div>
+					<div class="code-body">
+						p.scale(<span class="exp-body item1">0.5</span>);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">はこ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="var-block">
+					<div class="block-body">
+						はこをようい var<span class="exp-body item1">x</span> は =<span class="exp-body item2">0</span>;
+					</div>
+					<div class="code-body">
+						var <span class="exp-body item1">x</span> = <span class="exp-body item2">0</span>;
+					</div>
+				</li>
+				<li class="var-block">
+					<div class="block-body">
+						ことばのはこをようい var<span class="exp-body item1">str</span> は = "<span class="exp-body item2">こんにちは</span>";
+					</div>
+					<div class="code-body">
+						var <span class="exp-body item1">str</span> = "<span class="exp-body item2">こんにちは</span>";
+					</div>
+				</li>
+				<li class="var-block">
+					<div class="block-body">
+						はこ <span class="exp-body item1">x</span>にいれる =<span class="exp-body item2">x + 1</span>;
+					</div>
+					<div class="code-body">
+						<span class="exp-body item1">x</span> = <span class="exp-body item2">x + 1</span>;
+					</div>
+				</li>
+				<li class="basic-block">
+					<div class="block-body">
+						なかみはなに？ print(<span class="exp-body item1"></span>);
+					</div>
+					<div class="code-body">
+						p.print(<span class="exp-body item1"></span>);
+					</div>
+				</li>
+				<li class="comment-block">
+					<div class="block-body">
+						// <span class="exp-body item1">メモ</span>
+					</div>
+					<div class="code-body">
+						// <span class="exp-body item1">メモ</span>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">ながれ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="if-block">
+					<div class="block-body">
+						もし if(<span class="exp-body item1"></span>) なら {
+					</div>
+					<div class="code-body">
+						if(<span class="exp-body item1"></span>) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						または else if(<span class="exp-body item1"></span>) なら {
+					</div>
+					<div class="code-body">
+						else if(<span class="exp-body item1"></span>) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						ちがえば else {
+					</div>
+					<div class="code-body">
+						else {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="loop-block">
+					<div class="block-body">
+						くりかえす for(<span class="exp-body item1">i</span>が<span class="exp-body item2">0</span>から<span class="exp-body item3">10</span>になるまで) {
+					</div>
+					<div class="code-body">
+						for(var <span class="exp-body item1">i</span> = <span class="exp-body item2">0</span>; <span class="exp-body item1">i</span> <= <span class="exp-body item3">10</span>; <span class="exp-body item1">i</span>++) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="loop-block">
+					<div class="block-body">
+						くりかえす while(<span class="exp-body item1"></span>) {
+					</div>
+					<div class="code-body">
+						while(<span class="exp-body item1"></span>) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="loop-block">
+					<div class="block-body">
+						くりかえすのをやめる break
+					</div>
+					<div class="code-body">
+						break;
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">そうさ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="if-block">
+					<div class="block-body">
+						もし if( マウスボタンがおされた p.mouseIsPressed) なら {
+					</div>
+					<div class="code-body">
+						if(p.mouseIsPressed) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						もし if( このキーがおされた p.key == '<span class="exp-body item1">A</span>' ) なら {
+					</div>
+					<div class="code-body">
+						if(p.key=='<span class="exp-body item1">A</span>') {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						もし if( ↑キーがおされた ) なら {
+					</div>
+					<div class="code-body">
+						if(p.keyIsDown(p.UP_ARROW)) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						もし if( ↓キーがおされた ) なら {
+					</div>
+					<div class="code-body">
+						if(p.keyIsDown(p.DOWN_ARROW)) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						もし if( ←キーがおされた ) なら {
+					</div>
+					<div class="code-body">
+						if(p.keyIsDown(p.LEFT_ARROW)) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="if-block">
+					<div class="block-body">
+						もし if( →キーがおされた ) なら {
+					</div>
+					<div class="code-body">
+						if(p.keyIsDown(p.RIGHT_ARROW)) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+		<!-- start panel -->
+		<h5 class="accordion h_icon">わざ </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="func-block">
+					<div class="block-body">
+						マウスがおされたしゅんかん mousePressed() {
+					</div>
+					<div class="code-body">
+						p.mousePressed = function() {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="func-block">
+					<div class="block-body">
+						キーがおされたしゅんかん keyPressed() {
+					</div>
+					<div class="code-body">
+						p.keyPressed = function() {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="func-block">
+					<div class="block-body">
+						じぶんのわざ function <span class="exp-body item1">waza</span>(<span class="exp-body item2"></span>) |
+					</div>
+					<div class="code-body">
+						function <span class="exp-body item1">waza</span>(<span class="exp-body item2"></span>) {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="func-block">
+					<div class="block-body">
+						わざをつかう <span class="exp-body item1">waza</span>(<span class="exp-body item2"></span>);
+					</div>
+					<div class="code-body">
+						<span class="exp-body item1">waza</span>(<span class="exp-body item2"></span>);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">じゅんび </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="func-block">
+					<div class="block-body">
+						じゅんび steup() {
+					</div>
+					<div class="code-body">
+						p.setup = function() {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="func-block">
+					<div class="block-body">
+						ずっとすること draw() {
+					</div>
+					<div class="code-body">
+						p.draw = function() {
+					</div>
+					<ol>
+					</ol>
+					<div class="block-body">
+						}
+					</div>
+					<div class="code-body">
+						}
+					</div>
+				</li>
+				<li class="basic-block">
+					<div class="block-body">
+						がめんのおおきさ size(<span class="exp-body item1">800, 400</span>);
+					</div>
+					<div class="code-body">
+						p.createCanvas(<span class="exp-body item1">800, 400</span>);
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+		<!-- start panel -->
+		<h5 class="accordion h_icon">じっけん </h5>
+		<div class="accordion_part">
+			<ol class="pallet-code block connect-area accordion_ol">
+				<li class="basic-block">
+					<div class="block-body">
+						じゆうにかく <span class="exp-body item1">// いろいろじゆうにかいてじっけんする</span>;
+					</div>
+					<div class="code-body">
+						<span class="exp-body item1">// いろいろじゆうにかいてじっけんする</span>;
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- end panel -->
+
+	</div>
+	<!-- end of side-toolbox -->
+
+
+
+	<!-- Main edit area -->
+	<div class="col_8">
+		<ol class="block connect-area serialize">
+			<li class="comment-block">
+				<div class="block-body">
+					// <span class="exp-body item1">サンプル</span>
+				</div>
+				<div class="code-body">
+					// <span class="exp-body item1">サンプル</span>
+				</div>
+			</li>
+			<li class="func-block">
+				<div class="block-body">
+					じゅんび setup() {
+				</div>
+				<div class="code-body">
+					p.setup = function() {
+				</div>
+				<ol>
+					<li class="basic-block">
+						<div class="block-body">
+							がめんのおおきさ size(<span class="exp-body item1">600, 300</span>);
+						</div>
+						<div class="code-body">
+							p.createCanvas(<span class="exp-body item1">600, 300</span>);
+						</div>
+					</li>
+				</ol>
+				<div class="block-body">
+					}
+				</div>
+				<div class="code-body">
+					}
+				</div>
+			</li>
+			<li class="func-block">
+				<div class="block-body">
+					ずっとすること draw() {
+				</div>
+				<div class="code-body">
+					p.draw = function() {
+				</div>
+				<ol>
+					<li class="color-block">
+						<div class="block-body">
+							ぜんたいのいろ background(<span class="exp-body item1">255, 255, 0, 100</span>);
+						</div>
+						<div class="code-body">
+							p.background(<span class="exp-body item1">255, 255, 0, 100</span>);
+						</div>
+					</li>
+					<li class="if-block">
+						<div class="block-body">
+							いまのいちをおぼえておく push();
+						</div>
+						<div class="code-body">
+							p.push();
+						</div>
+						<ol>
+							<li class="move-block">
+								<div class="block-body">
+									マウスのいち translate(p.mouseX, p.mouseY);
+								</div>
+								<div class="code-body">
+									p.translate(p.mouseX, p.mouseY);
+								</div>
+							</li>
+							<li class="move-block">
+								<div class="block-body">
+									ぐるぐるまわる rotate(millis() * <span class="exp-body item1">0.1</span>);
+								</div>
+								<div class="code-body">
+									p.rotate( p.radians(p.millis() * <span class="exp-body item1">0.1</span>) );
+								</div>
+							</li>
+							<li class="shape-block">
+								<div class="block-body">
+									しかく rect(<span class="exp-body item1">-50, -50, 100, 100</span>);
+								</div>
+								<div class="code-body">
+									p.rect(<span class="exp-body item1">-50, -50, 100, 100</span>);
+								</div>
+							</li>
+						</ol>
+						<div class="block-body">
+							まえのいちにもどす pop();
+						</div>
+						<div class="code-body">
+							p.pop();
+						</div>
+					</li>
+				</ol>
+				<div class="block-body">
+					}
+				</div>
+				<div class="code-body">
+					}
+				</div>
+			</li>
+		</ol>
+	</div>
+	<!-- end of Main edit area -->
+
+	<!-- trash-can -->
+	<div class="col_1">
+		<a class="trash" href="#" onClick="MAME_BLOCK.clearTrash()" alt="trash"></a>
+		<ol id="trash-can" class="trash-code block connect-area"></ol>
+	</div>
+	<!-- end of trash-can -->
+	
+</div> <!-- End of editArea -->
